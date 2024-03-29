@@ -1,0 +1,29 @@
+$color:red;
+$fontSize:16px;
+
+ul{
+    font-size:$fontSize;
+    color:$color;
+}
+
+div{
+    font-size: 18px;
+    p{
+        color: aqua;
+    }
+}
+%message{
+    font-size: $fontSize;
+    font-weight: bold;
+    border: 1px solid black;
+    padding:20px;
+    margin:20px;
+}
+.success{
+    @extend %message;
+    background-color: green;
+}
+.danger{
+    @extend %message;
+    background-color: red;
+}
